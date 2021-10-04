@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <title>MMD - Design gioielli</title>
+    <link rel="shortcut icon" href="foto/mmd.jpg" type="image/jpg" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/slick-theme.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  </head>
+
+  <body>
+    <!-- push menu-->
+    <img
+      id="menuBurger"
+      class="onluMobile"
+      src="https://img.icons8.com/material-outlined/24/000000/menu--v3.png"
+    />
+    <div id="menuMobile" class="hiddenMobile">
+      <ul>
+        <li><a href="/Shop">Shop</a></li>
+        <li><a href="">aboutus</a></li>
+        <li><a href="https://mmdadmin.netlify.app/">Reserv</a></li>
+      </ul>
+    </div>
+    <div class="pushmenu menu-home5">
+      <div class="menu-push">
+        <span class="close-left js-close"
+          ><i class="ion-ios-close-empty f-40"></i
+        ></span>
+        <div class="clearfix"></div>
+        <form
+          role="search"
+          method="get"
+          id="searchform"
+          class="searchform"
+          action="/search"
+        >
+          <div>
+            <label class="screen-reader-text" for="q"></label>
+            <input
+              type="text"
+              placeholder="Search for products"
+              value=""
+              name="q"
+              id="q"
+              autocomplete="off"
+            />
+            <input type="hidden" name="type" value="product" />
+            <button type="submit" id="searchsubmit">
+              <i class="ion-ios-search-strong"></i>
+            </button>
+          </div>
+        </form>
+        <ul class="nav-home5 js-menubar">
+          <li class="level1 active dropdown">
+            <a href="#">Home</a>
+            <span class="icon-sub-menu"></span>
+            <ul class="menu-level1 js-open-menu">
+              <li class="level2"><a href="home1.html" title="">Demo 1</a></li>
+              <li class="level2"><a href="home2.html" title="">Demo 2</a></li>
+              <li class="level2"><a href="home3.html" title="">Demo 3</a></li>
+              <li class="level2"><a href="home4.html" title="">Demo 4</a></li>
+              <li class="level2"><a href="home5.html" title="">Demo 5</a></li>
+              <li class="level2"><a href="#" title="">Demo 6</a></li>
+            </ul>
+          </li>
+          <li class="level1 active dropdown">
+            <a href="/Shop" title="Shop">Shop</a>
+            <span class="icon-sub-menu"></span>
+            <div class="menu-level1 js-open-menu">
+              <ul class="level1">
+                <li class="level2">
+                  <a href="#">Shop Layout</a>
+                  <ul class="menu-level-2">
+                    <li class="level3">
+                      <a href="shop_full.html" title="">shop Full Width</a>
+                    </li>
+                    <li class="level3">
+                      <a href="shopgrid_v1.html" title="">Shop Grid v.1</a>
+                    </li>
+                    <li class="level3">
+                      <a href="shopgrid_v2.html" title="">Shop Grid v.2</a>
+                    </li>
+                    <li class="level3">
+                      <a href="shoplist.html" title="">Shop List</a>
+                    </li>
+                    <li class="level3">
+                      <a href="shopleft_sidebar.html" title=""
+                        >Shop Left Sidebar</a
+                      >
+                    </li>
+                    <li class="level3">
+                      <a href="shopright_sidebar.html" title=""
+                        >Shop Right Sidebar</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="level2">
+                  <a href="#">Categories</a>
+                  <ul class="menu-level-2">
+                    <li class="level3">
+                      <a href="cat_fullwidth.html" title=""
+                        >Categories Full Width</a
+                      >
+                    </li>
+                    <li class="level3">
+                      <a href="cat_left_sidebar.html" title=""
+                        >Categories Left Sidebar</a
+                      >
+                    </li>
+                    <li class="level3">
+                      <a href="cat_right_sidebar.html" title=""
+                        >Categories Right Sidebar</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="level2">
+                  <a href="#">Single Product Type</a>
+                  <ul class="menu-level-2">
+                    <li class="level3">
+                      <a href="bundle.html" title="">Bundle</a>
+                    </li>
+                    <li class="level3">
+                      <a href="pin_product.html" title="">Pin Product</a>
+                    </li>
+                    <li class="level3">
+                      <a href="360degree.html" title="">360 Degree</a>
+                    </li>
+                    <li class="level3">
+                      <a href="feature_video.html" title="">Featued video</a>
+                    </li>
+                    <li class="level3"><a href="simple.html">Simple</a></li>
+                    <li class="level3"><a href="variable.html">Variable</a></li>
+                    <li class="level3">
+                      <a href="affilate.html">External / Affiliate</a>
+                    </li>
+                    <li class="level3"><a href="grouped.html">Grouped</a></li>
+                    <li class="level3">
+                      <a href="outofstock.html">Out of stock</a>
+                    </li>
+                    <li class="level3"><a href="onsale.html">On sale</a></li>
+                  </ul>
+                </li>
+                <li class="level2">
+                  <a href="#">Single Product Layout</a>
+                  <ul class="menu-level-2">
+                    <li class="level3">
+                      <a href="product_extended.html" title=""
+                        >Product Extended</a
+                      >
+                    </li>
+                    <li class="level3">
+                      <a href="product_sidebar.html" title=""
+                        >Product Left Sidebar</a
+                      >
+                    </li>
+                    <li class="level3">
+                      <a href="product_right_sidebar.html" title=""
+                        >Product Right Sideba</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="level2">
+                  <a href="#">Other Pages</a>
+                  <ul class="menu-level-2">
+                    <li class="level3">
+                      <a href="shop_full.html" title="">Shop</a>
+                    </li>
+                    <li class="level3">
+                      <a href="cart.html" title="">Cart</a>
+                    </li>
+                    <li class="level3">
+                      <a href="wishlist.html" title="">My Wishlist</a>
+                    </li>
+                    <li class="level3">
+                      <a href="checkout.html" title="">Checkout</a>
+                    </li>
+                    <li class="level3">
+                      <a href="myaccount.html" title="">My Account</a>
+                    </li>
+                    <li class="level3">
+                      <a href="track.html" title="">Track Your Order</a>
+                    </li>
+                    <li class="level3">
+                      <a href="quickview.html" title="">Quick View</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="clearfix"></div>
+            </div>
+          </li>
+          <li class="level1 active dropdown"><a href="#">Mega Menu</a></li>
+          <li class="level1">
+            <a href="#">Pages</a>
+            <span class="icon-sub-menu"></span>
+            <ul class="menu-level1 js-open-menu">
+              <li class="level2">
+                <a href="aboutus.html" title="About Us ">About Us </a>
+              </li>
+              <li class="level2">
+                <a href="contactus.html" title="Contact">Contact</a>
+              </li>
+              <li class="level2"><a href="faq.html" title="FAQs">FAQs</a></li>
+              <li class="level2"><a href="404.html" title="404">404</a></li>
+              <li class="level2">
+                <a href="commingsoon.html" title="Coming Soon">Coming Soon</a>
+              </li>
+            </ul>
+          </li>
+          <li class="level1">
+            <a href="#">Blog</a>
+            <span class="icon-sub-menu"></span>
+            <ul class="menu-level1 js-open-menu">
+              <li class="level2">
+                <a href="blog-standar.html" title="Blog Standar"
+                  >Blog Standar</a
+                >
+              </li>
+              <li class="level2">
+                <a href="blog_grid.html" title="Blog Gird">Blog Gird</a>
+              </li>
+              <li class="level2">
+                <a href="blog-standar.html" title="Blog Sidebar"
+                  >Blog Sidebar</a
+                >
+              </li>
+              <li class="level2">
+                <a href="blog-single-post.html" title="Blog Single Post"
+                  >Blog Single Post</a
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <h4 class="mb-title">connect and follow</h4>
+        <div class="mobile-social mg-bottom-30">
+          <a href=""><i class="fa fa-facebook"></i></a>
+          <a href=""><i class="fa fa-twitter"></i></a>
+          <a href=""><i class="fa fa-google-plus"></i></a>
+        </div>
+      </div>
+    </div>
+    <!-- end push menu-->
+    <!-- Push cart -->
+    <div class="pushmenu pushmenu-left cart-box-container">
+      <div class="cart-list">
+        <div class="cart-list-heading">
+          <h3 class="cart-title">My cart</h3>
+          <span class="close-left js-close"
+            ><i class="ion-ios-close-empty"></i
+          ></span>
+        </div>
+        <div class="cart-inside">
+          <ul class="list">
+            <li class="item-cart">
+              <div class="product-img-wrap">
+                <a href="#" title="Product"
+                  ><img
+                    src="./foto/slider-1-home-1.png"
+                    alt="Product"
+                    class="img-responsive"
+                /></a>
+              </div>
+              <div class="product-details">
+                <div class="inner-left">
+                  <div class="product-name">
+                    <a href="#">Grosgrain tie cotton top</a>
+                  </div>
+                  <div class="product-price"><span>$20.9</span></div>
+                  <div class="cart-qtt">
+                    <button
+                      type="button"
+                      class="quantity-left-minus btn btn-number js-minus"
+                      data-type="minus"
+                      data-field=""
+                    >
+                      <span class="minus-icon"
+                        ><i class="ion-ios-minus-empty"></i
+                      ></span>
+                    </button>
+                    <input
+                      type="text"
+                      name="number"
+                      value="1"
+                      class="product_quantity_number js-number"
+                    />
+                    <button
+                      type="button"
+                      class="quantity-right-plus btn btn-number js-plus"
+                      data-type="plus"
+                      data-field=""
+                    >
+                      <span class="plus-icon"
+                        ><i class="ion-ios-plus-empty"></i
+                      ></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="item-cart">
+              <div class="product-img-wrap">
+                <a href="#" title="Product"
+                  ><img
+                    src="img/product/cart_product_2.jpg"
+                    alt="Product"
+                    class="img-responsive"
+                /></a>
+              </div>
+              <div class="product-details">
+                <div class="inner-left">
+                  <div class="product-name">
+                    <a href="#">Grosgrain tie cotton top</a>
+                  </div>
+                  <div class="product-price"><span>$20.9</span></div>
+                  <div class="cart-qtt">
+                    <button
+                      type="button"
+                      class="quantity-left-minus btn btn-number js-minus"
+                      data-type="minus"
+                      data-field=""
+                    >
+                      <span class="minus-icon"
+                        ><i class="ion-ios-minus-empty"></i
+                      ></span>
+                    </button>
+                    <input
+                      type="text"
+                      name="number"
+                      value="1"
+                      class="product_quantity_number js-number"
+                    />
+                    <button
+                      type="button"
+                      class="quantity-right-plus btn btn-number js-plus"
+                      data-type="plus"
+                      data-field=""
+                    >
+                      <span class="plus-icon"
+                        ><i class="ion-ios-plus-empty"></i
+                      ></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="cart-bottom">
+            <div class="cart-form">
+              <div class="cart-note-form">
+                <label
+                  for="CartSpecialInstructions"
+                  class="cart-note cart-note_text_label small--text-center"
+                  >Special Offer:</label
+                >
+                <textarea
+                  rows="6"
+                  name="note"
+                  id="CartSpecialInstructions"
+                  class="cart-note__input form-control note--input"
+                ></textarea>
+              </div>
+            </div>
+            <div class="cart-button mg-top-30">
+              <a class="zoa-btn checkout" href="#" title="">Check out</a>
+            </div>
+          </div>
+        </div>
+        <!-- End cart bottom -->
+      </div>
+    </div>
+    <!-- End pushcart -->
+    <!-- Search form -->
+    <div class="search-form-wrapper header-search-form">
+      <div class="container">
+        <div class="search-results-wrapper">
+          <div class="btn-search-close">
+            <i class="ion-ios-close-empty"></i>
+          </div>
+        </div>
+        <ul class="zoa-category text-center">
+          <li><a href="">All Categories</a></li>
+          <li><a href="">Woman</a></li>
+          <li><a href="">Man</a></li>
+          <li><a href="">Accessories</a></li>
+          <li><a href="">Kid</a></li>
+          <li><a href="">Others</a></li>
+        </ul>
+        <form
+          method="get"
+          action="/search"
+          role="search"
+          class="search-form has-categories-select"
+        >
+          <input
+            name="q"
+            class="search-input"
+            type="text"
+            value=""
+            placeholder="Enter your keywords..."
+            autocomplete="off"
+          />
+          <input type="hidden" name="post_type" value="product" />
+          <button type="submit" id="search-btn">
+            <i class="ion-ios-search-strong"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+    <!-- End search form -->
+    <!-- Account -->
+    <div class="wrappage">
+      <header id="header" class="header-v2">
+        <div class="header-center">
+          <div class="container container-content">
+            <div class="row flex align-items-center justify-content-between">
+              <div
+                class="col-md-4 col-xs-4 col-sm-4 col2 hidden-lg hidden-md"
+              ></div>
+              <div
+                class="col-md-3 col-xs-4 col-sm-4 col2 justify-content-center"
+              >
+                <a href="#"
+                  ><img
+                    src="./foto/mmd.jpg"
+                    style="height: 70px"
+                    alt=""
+                    class="img-reponsive"
+                /></a>
+              </div>
+              <div
+                class="col-md-9 col-xs-4 col-sm-4 col2 flex justify-content-end"
+              >
+                <ul class="nav navbar-nav js-menubar hidden-xs hidden-sm">
+                  <li class="level1 active dropdown">
+                    <a href="#" title="Home">Home</a>
+                    <span class="plus js-plus-icon"></span>
+                  </li>
+                  <li class="level1 dropdown hassub">
+                    <a href="/Shop" title="Shop">Shop</a>
+                    <span class="plus js-plus-icon"></span>
+                  </li>
+                  <li class="level1 active dropdown">
+                    <a href="#" title="Blog">Story</a>
+                  </li>
+                </ul>
+                <div class="topbar-left">
+                  <div class="element element-user hidden-xs hidden-sm">
+                    <a
+                      href="https://mmdadmin.netlify.app/"
+                      class="zoa-icon js-user"
+                    >
+                      <svg
+                        width="19"
+                        height="20"
+                        version="1.1"
+                        id="Layer_3"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        x="0px"
+                        y="0px"
+                        viewBox="0 0 100 102.8"
+                        style="enable-background: new 0 0 100 102.8"
+                        xml:space="preserve"
+                      >
+                        <g>
+                          <path
+                            d="M75.7,52.4c-2.1,2.3-4.4,4.3-7,6C82.2,58.8,93,69.9,93,83.5v12.3H7V83.5c0-13.6,10.8-24.7,24.3-25.1c-2.6-1.7-5-3.7-7-6
+        C10.3,55.9,0,68.5,0,83.5v15.8c0,1.9,1.6,3.5,3.5,3.5h93c1.9,0,3.5-1.6,3.5-3.5V83.5C100,68.5,89.7,55.9,75.7,52.4z"
+                          />
+                          <g>
+                            <path
+                              d="M50,58.9c-16.2,0-29.5-13.2-29.5-29.5S33.8,0,50,0s29.5,13.2,29.5,29.5S66.2,58.9,50,58.9z M50,7
+            C37.6,7,27.5,17.1,27.5,29.5S37.6,51.9,50,51.9s22.5-10.1,22.5-22.5S62.4,7,50,7z"
+                            />
+                          </g>
+                        </g>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- /header -->
+      <!-- content -->
+      <div class="slide v3">
+        <div class="js-slider-v4">
+          <div class="slide-img">
+            <img
+              id="imgTop1"
+              src="./foto/slider-1-home-5.png "
+              alt=""
+              class="img-responsive"
+            />
+            <div class="box-center content2">
+              <h3 id="metamorphosi">metamorphosidesign</h3>
+              <a href="/Shop/" class="slide-btn">Shop Now</a>
+            </div>
+          </div>
+
+          <div class="slide-img">
+            <img
+              id="imgTop2"
+              src="./foto/slider-1-home-2.png"
+              alt=""
+              class="img-responsive"
+            />
+            <div class="box-center content2">
+              <h3>Mmd Gioielli</h3>
+              <a href="/Shop/" class="slide-btn">Shop Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="custom">
+          <div class="pagingInfo"></div>
+        </div>
+      </div>
+      <!-- End content -->
+      <div class="trend-product pad">
+        <div class="container container-content">
+          <div class="row first">
+            <div class="col-md-5 col-sm-6 col-xs-12">
+              <div class="trend-img hover-images">
+                <img class="img-responsive" src="./foto/foto3.jpeg" alt="" />
+
+                <div class="box-center align-items-end">
+                  <h3 class="zoa-category-box-title">
+                    <a href="/Shop/">#trend</a>
+                  </h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-7 col-sm-6 col-xs-12">
+              <div class="row engoc-row-equal">
+                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 product-item">
+                  <div class="product-img">
+                    <a href="/Shop"
+                      ><img
+                        src="./foto/Prodotti/anello.jpeg"
+                        alt=""
+                        class="img-responsive"
+                    /></a>
+                    <div class="ribbon zoa-sale"><span>-15%</span></div>
+                  </div>
+                  <div class="product-info text-center">
+                    <h3 class="product-title">
+                      <a href="">Anello zaffiro blu</a>
+                    </h3>
+                    <div class="product-price">
+                      <span class="old">$25.5</span>
+                      <span>$20.9</span>
+                    </div>
+                    <div class="color-group"></div>
+                  </div>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 product-item">
+                  <div class="product-img">
+                    <a href="/Shop"
+                      ><img
+                        src="./foto/Prodotti/collana2.jpeg"
+                        alt=""
+                        class="img-responsive"
+                    /></a>
+                    <div class="ribbon zoa-hot"><span>New</span></div>
+                  </div>
+                  <div class="product-info text-center">
+                    <h3 class="product-title">
+                      <a href="">Collana rossa cuori </a>
+                    </h3>
+                    <div class="product-price">
+                      <span>$20.9</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 product-item">
+                  <div class="product-img">
+                    <a href="/Shop"
+                      ><img
+                        src="./foto/Prodotti/collana3.jpeg"
+                        alt=""
+                        class="img-responsive"
+                    /></a>
+                    <div class="ribbon zoa-new"><span>New</span></div>
+                  </div>
+                  <div class="product-info text-center">
+                    <h3 class="product-title">
+                      <a href="">Grosgrain tie cotton top</a>
+                    </h3>
+                    <div class="product-price">
+                      <span>$20.9</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 product-item">
+                  <div class="product-img">
+                    <a href="/Shop"
+                      ><img
+                        src="./foto/Prodotti/collana4.jpeg"
+                        alt=""
+                        class="img-responsive"
+                    /></a>
+                  </div>
+                  <div class="product-info text-center">
+                    <h3 class="product-title">
+                      <a href="">Grosgrain tie cotton top</a>
+                    </h3>
+                    <div class="product-price">
+                      <span>$20.9</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 product-item">
+                  <div class="product-img">
+                    <a href="/Shop"
+                      ><img
+                        src="./foto/Prodotti/collana4.jpeg"
+                        alt=""
+                        class="img-responsive"
+                    /></a>
+                  </div>
+                  <div class="product-info text-center">
+                    <h3 class="product-title">
+                      <a href="">Grosgrain tie cotton top</a>
+                    </h3>
+                    <div class="product-price">
+                      <span>$20.9</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 product-item">
+                  <div class="product-img">
+                    <a href="/Shop"
+                      ><img
+                        src="./foto/Prodotti/collana2.jpeg"
+                        alt=""
+                        class="img-responsive"
+                    /></a>
+                    <div class="ribbon zoa-new"><span>trend</span></div>
+                  </div>
+                  <div class="product-info text-center">
+                    <h3 class="product-title">
+                      <a href="">Grosgrain tie cotton top</a>
+                    </h3>
+                    <div class="product-price">
+                      <span>$20.9</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="single-banner">
+        <div class="container container-content">
+          <div class="banner-img hover-images">
+            <img src="./foto/home-1-bg.png" alt="" class="img-responsive" />
+
+            <div class="box-center">
+              <div class="content">
+                <a class="text" href="/Shop/">#spring collect</a>
+                <h2>-50%</h2>
+                <a href="/Shop/" class="zoa-btn btn-shopnow">Shop Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="newsletter">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5 col-sm-6 col-xs-12">
+              <div class="newsletter-heading">
+                <h3>get in touch</h3>
+                <p>Subscribe for latest stories and promotions (35% sale)</p>
+              </div>
+            </div>
+            <div class="col-md-7 col-sm-6 col-xs-12 flex-end">
+              <form class="form_newsletter" action="#" method="post">
+                <input
+                  type="email"
+                  value=""
+                  placeholder="Enter your emaill"
+                  name="EMAIL"
+                  id="mail"
+                  class="newsletter-input form-control"
+                />
+                <button
+                  id="subscribe"
+                  class="button_mini zoa-btn"
+                  type="submit"
+                >
+                  Subscribe
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="policy pad bd-top">
+          <div class="row">
+            <div class="col-xs-6 col-sm-6 col-md-3 policy-item">
+              <div class="policy-icon">
+                <img
+                  src="http://landing.engotheme.com/html/zoa/demo/img/policy/icon_1.png"
+                  alt=""
+                />
+              </div>
+              <div class="policy-content">
+                <h3>Spedizione gratuita</h3>
+                <p>ordini superiori a 50£</p>
+              </div>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-3 policy-item">
+              <div class="policy-icon">
+                <img
+                  src="http://landing.engotheme.com/html/zoa/demo/img/policy/icon_2.png"
+                  alt=""
+                />
+              </div>
+              <div class="policy-content">
+                <h3>15 giorni</h3>
+                <p>di garanzia</p>
+              </div>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-3 policy-item">
+              <div class="policy-icon">
+                <img
+                  src="http://landing.engotheme.com/html/zoa/demo/img/policy/icon_3.png"
+                  alt=""
+                />
+              </div>
+              <div class="policy-content">
+                <h3>Pagamenti sicuri</h3>
+                <p>esterni dal sito, diretti su un sito sicuro</p>
+              </div>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-3 policy-item">
+              <div class="policy-icon">
+                <img
+                  src="http://landing.engotheme.com/html/zoa/demo/img/policy/icon_4.png"
+                  alt=""
+                />
+              </div>
+              <div class="policy-content">
+                <h3>100% artigianali</h3>
+                <p>tutti i prodotti diversi</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer -->
+      <footer class="footer v1 bd-top">
+        <div class="container">
+          <div class="f-content">
+            <div class="f-col">
+              <div class="social">
+                <a href=""><i class="fa fa-rss"></i></a>
+                <a href=""><i class="fa fa-facebook"></i></a>
+                <a href=""><i class="fa fa-twitter"></i></a>
+                <a href=""><i class="fa fa-linkedin"></i></a>
+                <a href=""><i class="fa fa-rss"></i></a>
+              </div>
+            </div>
+            <div class="f-col align-items-center">
+              <p>© 2021 <a href="">Luis Beqja</a></p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- End Footer -->
+    </div>
+    <a href="#" class="zoa-btn scroll_top"><i class="ion-ios-arrow-up"></i></a>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/countdown.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
