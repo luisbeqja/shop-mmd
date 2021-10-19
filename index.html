@@ -521,7 +521,7 @@
               class="img-responsive"
             />
             <div class="box-center content2">
-              <h3>Mmd Gioielli</h3>
+              <h3>mmd Gioielli</h3>
               <a href="/Shop/" class="slide-btn">Shop Now</a>
             </div>
           </div>
@@ -547,122 +547,7 @@
             </div>
 
             <div class="col-md-7 col-sm-6 col-xs-12">
-              <div class="row engoc-row-equal">
-                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 product-item">
-                  <div class="product-img">
-                    <a href="/Shop"
-                      ><img
-                        src="./foto/Prodotti/anello.jpeg"
-                        alt=""
-                        class="img-responsive"
-                    /></a>
-                    <div class="ribbon zoa-sale"><span>-15%</span></div>
-                  </div>
-                  <div class="product-info text-center">
-                    <h3 class="product-title">
-                      <a href="">Anello zaffiro blu</a>
-                    </h3>
-                    <div class="product-price">
-                      <span class="old">$25.5</span>
-                      <span>$20.9</span>
-                    </div>
-                    <div class="color-group"></div>
-                  </div>
-                </div>
-                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 product-item">
-                  <div class="product-img">
-                    <a href="/Shop"
-                      ><img
-                        src="./foto/Prodotti/collana2.jpeg"
-                        alt=""
-                        class="img-responsive"
-                    /></a>
-                    <div class="ribbon zoa-hot"><span>New</span></div>
-                  </div>
-                  <div class="product-info text-center">
-                    <h3 class="product-title">
-                      <a href="">Collana rossa cuori </a>
-                    </h3>
-                    <div class="product-price">
-                      <span>$20.9</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 product-item">
-                  <div class="product-img">
-                    <a href="/Shop"
-                      ><img
-                        src="./foto/Prodotti/collana3.jpeg"
-                        alt=""
-                        class="img-responsive"
-                    /></a>
-                    <div class="ribbon zoa-new"><span>New</span></div>
-                  </div>
-                  <div class="product-info text-center">
-                    <h3 class="product-title">
-                      <a href="">Grosgrain tie cotton top</a>
-                    </h3>
-                    <div class="product-price">
-                      <span>$20.9</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 product-item">
-                  <div class="product-img">
-                    <a href="/Shop"
-                      ><img
-                        src="./foto/Prodotti/collana4.jpeg"
-                        alt=""
-                        class="img-responsive"
-                    /></a>
-                  </div>
-                  <div class="product-info text-center">
-                    <h3 class="product-title">
-                      <a href="">Grosgrain tie cotton top</a>
-                    </h3>
-                    <div class="product-price">
-                      <span>$20.9</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 product-item">
-                  <div class="product-img">
-                    <a href="/Shop"
-                      ><img
-                        src="./foto/Prodotti/collana4.jpeg"
-                        alt=""
-                        class="img-responsive"
-                    /></a>
-                  </div>
-                  <div class="product-info text-center">
-                    <h3 class="product-title">
-                      <a href="">Grosgrain tie cotton top</a>
-                    </h3>
-                    <div class="product-price">
-                      <span>$20.9</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 product-item">
-                  <div class="product-img">
-                    <a href="/Shop"
-                      ><img
-                        src="./foto/Prodotti/collana2.jpeg"
-                        alt=""
-                        class="img-responsive"
-                    /></a>
-                    <div class="ribbon zoa-new"><span>trend</span></div>
-                  </div>
-                  <div class="product-info text-center">
-                    <h3 class="product-title">
-                      <a href="">Grosgrain tie cotton top</a>
-                    </h3>
-                    <div class="product-price">
-                      <span>$20.9</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <div class="row engoc-row-equal" id="react"></div>
             </div>
           </div>
         </div>
@@ -796,5 +681,31 @@
     <script src="js/countdown.js"></script>
     <script src="js/main.js"></script>
     <script src="js/app.js"></script>
+
+    <!-- firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+    <!-- ADDING REACT LINK -->
+    <script
+      src="https://unpkg.com/react@16/umd/react.production.min.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"
+      crossorigin
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- add links to all components  -->
+    <script type="text/babel" src="./components/Consigliati.jsx"></script>
+    <!-- add links to all components  -->
+
+    <script type="text/babel">
+      ReactDOM.render(<GetData />, document.querySelector("#react")); //connect the tag
+    </script>
+    <!-- ADDING REACT LINK -->
   </body>
 </html>
