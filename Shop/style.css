@@ -3769,3 +3769,21 @@ h3.widget-title-modal {
   background-position: center;
   background-size: cover;
 }
+
+.infoAbout {
+  width: 95%;
+  margin: auto;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+.infoAbout h3 {
+  margin-top: 20px;
+}
+
+.infoAbout ul {
+  margin-top: 30px;
+}
+
+.infoAbout ul li {
+  margin: 5px 0;
+}
