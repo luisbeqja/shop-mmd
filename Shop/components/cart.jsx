@@ -32,6 +32,7 @@ function HoverProduct(props) {
         <p>{props.info.informaz}</p>
         <h3>{props.info.prezzo}€</h3>
         <h4>Vecchio prezzo: {props.info.prezzoVecchio}€</h4>
+
         <a href="contact.html">
           <button>Contattami</button>
         </a>
@@ -45,6 +46,7 @@ function WelcomeBack() {
   const [count, setCount] = useState([]);
   const [classe, setClasse] = useState("hidden");
   const [info, setInfo] = useState({});
+  const [catSelezionata, setCatSelezionata] = useState("tutto");
   useEffect(() => {
     todoRef.on("value", function (snapshot) {
       const obj = snapshot.val();
@@ -62,18 +64,62 @@ function WelcomeBack() {
           setClasse("hidden");
         }}
       />
+      <div className="button">
+        <button
+          onClick={() => {
+            setCatSelezionata("Collane");
+          }}
+        >
+          Collane
+        </button>
+        <button
+          onClick={() => {
+            setCatSelezionata("Orecchini");
+          }}
+        >
+          Orecchini
+        </button>
+        <button
+          onClick={() => {
+            setCatSelezionata("Anelli");
+          }}
+        >
+          Anelli
+        </button>
+        <button
+          onClick={() => {
+            setCatSelezionata("Bracciali");
+          }}
+        >
+          Bracciali
+        </button>
+        <button
+          onClick={() => {
+            setCatSelezionata("tutto");
+          }}
+        >
+          Tutto
+        </button>
+      </div>
+
       {count
         .slice(0)
         .reverse()
         .map((e) => {
           let isNew;
-          let isHidden;
+          let isHidden = "hidden";
           if (e.new === true) {
             isNew = "New";
           }
+          if (e.catego === catSelezionata) {
+            isHidden = " ";
+          }
+          if (catSelezionata === "tutto") {
+            isHidden = " ";
+          }
           return (
             <div
-              class={`col-md-4 col-sm-4 ${e.catego}`}
+              class={`col-md-4 col-sm-4 ${e.catego} ${isHidden}`}
               onClick={() => {
                 setClasse("visible");
                 setInfo({
@@ -84,6 +130,7 @@ function WelcomeBack() {
                   categoria: e.catego,
                   informaz: e.inforamzioni,
                 });
+                console.log(info);
               }}
             >
               <div class="single-product">
