@@ -947,12 +947,12 @@ img.secondary-img {
 .price {
 }
 .price span {
-  color: #fe4847;
+  color: #ffffff;
   font-size: 18px;
   font-weight: 400;
 }
 .price span.old {
-  color: #ddd;
+  color: #fe4847;
   font-size: 14px;
   margin-left: 10px;
   text-decoration: line-through;
@@ -3694,7 +3694,6 @@ h3.widget-title-modal {
 }
 
 .divInfo h4 {
-  text-decoration: line-through;
   color: rgba(255, 0, 0, 0.625);
 }
 .divInfo h3 {
@@ -3816,6 +3815,10 @@ h3.widget-title-modal {
   margin-top: 0;
   padding: 5px 10px;
   border-radius: 5px;
+}
+
+.nonDisponibile {
+  opacity: 0.5;
 }
 
 @media (max-width: 768px) {

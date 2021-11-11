@@ -13,6 +13,10 @@ const storage = firebase.storage();
 const todoRef = firebase.database().ref("url/");
 
 function HoverProduct(props) {
+  let isDisponibile;
+  if (props.info.disponibile == "no") {
+    isDisponibile = " NON DISPONIBILE";
+  }
   return (
     <div className={`hoverProduct ${props.classe}`}>
       <div className="imgDiv">
@@ -31,7 +35,7 @@ function HoverProduct(props) {
         <h2>{props.info.titolo}</h2>
         <p>{props.info.informaz}</p>
         <h3>{props.info.prezzo}€</h3>
-        <h4>Vecchio prezzo: {props.info.prezzoVecchio}€</h4>
+        <h4> {isDisponibile}</h4>
 
         <a href="contact.html">
           <button>Contattami</button>
@@ -106,8 +110,18 @@ function WelcomeBack() {
         .slice(0)
         .reverse()
         .map((e) => {
+          console.log(e.disponibile);
           let isNew;
+          let isDisponible;
+          let isDisponibleText;
           let isHidden = "hidden";
+
+          if (e.disponibile != "si") {
+            isDisponible = "nonDisponibile";
+            isDisponibleText = "NON DISPONIBILE";
+          } else {
+            isDisponible = " ";
+          }
           if (e.new === true) {
             isNew = "New";
           }
@@ -119,7 +133,7 @@ function WelcomeBack() {
           }
           return (
             <div
-              class={`col-md-4 col-sm-4 ${e.catego} ${isHidden}`}
+              class={`col-md-4 col-sm-4 ${e.catego} ${isHidden} ${isDisponible}`}
               onClick={() => {
                 setClasse("visible");
                 setInfo({
@@ -129,8 +143,8 @@ function WelcomeBack() {
                   prezzoVecchio: e.prezzoVecchio,
                   categoria: e.catego,
                   informaz: e.inforamzioni,
+                  disponibile: e.disponibile,
                 });
-                console.log(info);
               }}
             >
               <div class="single-product">
@@ -155,7 +169,7 @@ function WelcomeBack() {
                   </h3>
                   <div class="price">
                     <span>{e.prezzo}€</span>
-                    <span class="old">{e.prezzoVecchio}€</span>
+                    <span class="old">{isDisponibleText}</span>
                   </div>
                 </div>
               </div>
