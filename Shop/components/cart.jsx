@@ -39,6 +39,12 @@ function HoverProduct(props) {
 
         <a href="contact.html">
           <button>Contattami</button>
+          <a
+            className="acquista"
+            href="https://www.etsy.com/shop/metamorphosidesign?ref=profile_header"
+          >
+            Acquista direttamente
+          </a>
         </a>
       </div>
     </div>
@@ -58,6 +64,7 @@ function WelcomeBack() {
       setCount(Object.values(obj));
     });
   }, []);
+  console.log(count);
 
   return (
     <div>
@@ -110,7 +117,6 @@ function WelcomeBack() {
         .slice(0)
         .reverse()
         .map((e) => {
-          console.log(e.disponibile);
           let isNew;
           let isDisponible;
           let isDisponibleText;
