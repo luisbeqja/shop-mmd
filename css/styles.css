@@ -25,7 +25,7 @@
             9.2 form
             9.3 layout
             9.4 nav
-    
+
 
 
 -------------------------------------------------------------------*/
@@ -22307,4 +22307,28 @@ i.fa.fa-plus {
 }
 
 @media (min-widt: 600px) {
+}
+
+.project{
+  text-align: center;
+}
+.project p{
+  margin-top: 40px;
+  width: 60%;
+  margin: auto;
+}
+.project button {
+  padding: 10px 70px;
+  background-color: white;
+  border: solid black 2px;
+  border-radius: 5px;
+}
+.div-images{
+  margin-top: 60px;
+}
+@media (max-width: 768px) {
+  .project p{
+    width: 90%;
+    margin: auto;
+  }
 }
