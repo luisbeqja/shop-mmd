@@ -22332,3 +22332,8 @@ i.fa.fa-plus {
     margin: auto;
   }
 }
+
+
+.button_project button{
+  margin-top: 40px;
+}
