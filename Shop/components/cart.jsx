@@ -1,21 +1,21 @@
 const { useState, useEffect } = React;
 
 var firebaseConfig = {
-  apiKey: "AIzaSyDCC2DH4VL1TCO9m-eqhQLJnUx8li26jLk",
-  authDomain: "mmddesigne.firebaseapp.com",
-  projectId: "mmddesigne",
-  storageBucket: "mmddesigne.appspot.com",
-  messagingSenderId: "475825936411",
-  appId: "1:475825936411:web:e16aac6ff9a3fef45600be",
+  apiKey: 'AIzaSyDCC2DH4VL1TCO9m-eqhQLJnUx8li26jLk',
+  authDomain: 'mmddesigne.firebaseapp.com',
+  projectId: 'mmddesigne',
+  storageBucket: 'mmddesigne.appspot.com',
+  messagingSenderId: '475825936411',
+  appId: '1:475825936411:web:e16aac6ff9a3fef45600be',
 };
 firebase.initializeApp(firebaseConfig);
 const storage = firebase.storage();
-const todoRef = firebase.database().ref("url/");
+const todoRef = firebase.database().ref('url/');
 
 function HoverProduct(props) {
   let isDisponibile;
-  if (props.info.disponibile == "no") {
-    isDisponibile = " NON DISPONIBILE";
+  if (props.info.disponibile == 'no') {
+    isDisponibile = ' NON DISPONIBILE';
   }
   return (
     <div className={`hoverProduct ${props.classe}`}>
@@ -54,11 +54,11 @@ function HoverProduct(props) {
 function WelcomeBack() {
   let objectFire = [];
   const [count, setCount] = useState([]);
-  const [classe, setClasse] = useState("hidden");
+  const [classe, setClasse] = useState('hidden');
   const [info, setInfo] = useState({});
-  const [catSelezionata, setCatSelezionata] = useState("tutto");
+  const [catSelezionata, setCatSelezionata] = useState('tutto');
   useEffect(() => {
-    todoRef.on("value", function (snapshot) {
+    todoRef.on('value', function (snapshot) {
       const obj = snapshot.val();
       objectFire = Object.values(obj);
       setCount(Object.values(obj));
@@ -72,47 +72,55 @@ function WelcomeBack() {
         info={info}
         classe={classe}
         funzione={() => {
-          setClasse("hidden");
+          setClasse('hidden');
         }}
       />
       <div className="button">
         <button
           onClick={() => {
-            setCatSelezionata("Collane");
+            setCatSelezionata('Collane');
           }}
         >
           Collane
         </button>
         <button
           onClick={() => {
-            setCatSelezionata("Orecchini");
+            setCatSelezionata('Orecchini');
           }}
         >
           Orecchini
         </button>
         <button
           onClick={() => {
-            setCatSelezionata("Anelli");
+            setCatSelezionata('Anelli');
           }}
         >
           Anelli
         </button>
         <button
           onClick={() => {
-            setCatSelezionata("Bracciali");
+            setCatSelezionata('Bracciali');
           }}
         >
           Bracciali
         </button>
+
         <button
           onClick={() => {
-            setCatSelezionata("tutto");
+            setCatSelezionata('Ritratti');
+          }}
+        >
+          ritratti
+        </button>
+        <button
+          onClick={() => {
+            setCatSelezionata('tutto');
           }}
         >
           Tutto
         </button>
       </div>
-
+      ;
       {count
         .slice(0)
         .reverse()
@@ -120,28 +128,28 @@ function WelcomeBack() {
           let isNew;
           let isDisponible;
           let isDisponibleText;
-          let isHidden = "hidden";
+          let isHidden = 'hidden';
 
-          if (e.disponibile != "si") {
-            isDisponible = "nonDisponibile";
-            isDisponibleText = "NON DISPONIBILE";
+          if (e.disponibile != 'si') {
+            isDisponible = 'nonDisponibile';
+            isDisponibleText = 'NON DISPONIBILE';
           } else {
-            isDisponible = " ";
+            isDisponible = ' ';
           }
           if (e.new === true) {
-            isNew = "New";
+            isNew = 'New';
           }
           if (e.catego === catSelezionata) {
-            isHidden = " ";
+            isHidden = ' ';
           }
-          if (catSelezionata === "tutto") {
-            isHidden = " ";
+          if (catSelezionata === 'tutto') {
+            isHidden = ' ';
           }
           return (
             <div
               class={`col-md-4 col-sm-4 ${e.catego} ${isHidden} ${isDisponible}`}
               onClick={() => {
-                setClasse("visible");
+                setClasse('visible');
                 setInfo({
                   immagine: e.link,
                   titolo: e.titolo,
